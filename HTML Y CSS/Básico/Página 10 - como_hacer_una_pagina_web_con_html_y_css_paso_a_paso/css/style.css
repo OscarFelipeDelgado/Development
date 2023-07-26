@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
 
 /*Globales*/
 *,
@@ -101,7 +101,7 @@ header {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(80, 100, 8, 0.8);
+    background-color: rgba(0, 0, 0, .8);
     z-index: 1000;
     opacity: 0;
     transform: scale(0);
@@ -177,7 +177,7 @@ header {
 .head {
     color: #fff;
     font-size: 3.7rem;
-    font-family: 'Bruno Ace', cursive;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: .5rem;
@@ -385,7 +385,7 @@ footer {
     }
 
     .nav-list {
-        position:initial;
+        position: initial;
         width: initial;
         height: initial;
         background-color: transparent;
