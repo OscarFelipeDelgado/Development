@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+                "encabezado encabezado encabezado encabezado"
+                "navegacion navegacion main main"
+                "navegacion navegacion main main"
+                "navegacion navegacion main main"
+                "sidebar sidebar . . "
+                "footer footer footer footer";
+            grid-template-columns: 1fr 1fr 2fr 2fr;
+            height: 600px;
+            gap: 20px;
+        }
+        .header{
+            grid-area: encabezado;
+            background-color: rgba(255, 0, 0, 0.734);
+            color: white;
+            padding: 10px;
+        }
+        .nav{
+            grid-area: navegacion;
+            background-color: rgba(0, 128, 0, 0.797);
+            color: white;
+            padding: 10px;
+        }
+        .main{
+            display: grid;
+            grid-template-areas: 
+            "section1"
+            "section2"
+            "section3"
+            ".";
+            background-color: lightgoldenrodyellow;
+            grid-area: main;
+            padding: 20px;
+        }
+        section{
+            grid-area: section;
+            padding: 10px;
+        }
+        .section1{
+            grid-area: section1;
+            background-color: rgb(132, 31, 132);
+            color: white;
+        }
+        .section2{
+            grid-area: section2;
+            background-color: rgba(53, 53, 133, 0.989);
+            color: white;
+        }
+        .section3{
+            grid-area: section3;
+            background-color: rgba(111, 180, 223, 0.83);
+            color: white;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: orange;
+            color: white;
+            padding: 10px;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: pink;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <body>
+    <div class="container">
+        <header class="header">Header</header>
+        <nav class="nav">Nav</nav>
+        <main class="main">
+            <section class="section1">Section 1</section>
+            <section class="section2">Section 2</section>
+            <section class="section3">Section 3</section>
+        </main>
+        <aside class="sidebar">Sidebar</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</body>
+</html>

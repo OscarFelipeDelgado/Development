@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgb(120, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+header p{
+    font-size: 4vw;
+    text-indent: 2vw;
+    color: white;  
+}
+nav {
+    display: flex;
+    color: white;
+    background-color: rgb(150, 0, 0);
+    
+    height: 1vw;
+    padding: 2vw;
+    align-self: center;
+
+    align-items: center;
+    text-indent: 1vw;
+    font-size: 3vw;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

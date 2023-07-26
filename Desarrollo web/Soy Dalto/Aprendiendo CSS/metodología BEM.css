@@ -1,0 +1,12 @@
+
+
+
+
+.form__input:first-child {
+  color: red;
+} /*para el primer elemento se usa el first-child*/
+
+.form__input--active {
+  color: green;
+}
+

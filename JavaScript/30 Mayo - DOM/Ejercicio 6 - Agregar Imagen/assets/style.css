@@ -1,0 +1,21 @@
+body{
+    display:flexbox;
+}
+h1{
+    text-align: center;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+input{
+    border-radius: 6px;
+    border-color: bisque;
+    border-bottom-color: lightgray;
+    font-size: 15px;
+}
+img{
+    display: flex;
+    display: block;
+    width: 90vw;
+}

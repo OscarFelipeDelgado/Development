@@ -1,0 +1,24 @@
+* {
+     padding: 0px;
+     margin: 0px;
+}
+
+.contact-form {
+  font-size: 10px;
+}
+
+.contact-form__h2 {
+  font-size: 6em; 
+}
+
+/*1em=16 píxeles (por defecto)
+  y sino, se hereda de su contenedor
+*/ 
+
+.contact-form-V {
+  font-size: 8vw;
+  background-color: green;
+  width: 50vw;
+  height: 30vh;
+}
+

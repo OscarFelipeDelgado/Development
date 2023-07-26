@@ -1,0 +1,16 @@
+h2{
+    text-align: center;
+    text-shadow: 10px;
+}
+#tabla{
+    margin: auto;
+    border-style: solid;
+    border-color: bisque;
+}
+td{
+    border-style: solid;
+    border-color: bisque;
+    padding: 10px;
+    background-color: blanchedalmond;
+    text-align: center;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ejercicio</title>
+    <style>
+        ul {
+            list-style-type: square;
+        }
+        h1{
+            color: blue;
+        }
+        h2{
+            color: green;
+        }
+        h3{
+            color: red;
+        }
+        a{
+            color: purple;
+            text-decoration: none;
+        }
+        p{
+            font-size: medium;
+        }
+        hr{
+            border-top: dotted;
+            border-bottom: none;
+        }
+        section{
+            background-color: greenyellow;
+            border: 5px solid blue;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        #grilla-nueva{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+            gap: 10px;
+        }
+        .divs-nuevos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id = "container">
+        <h1>Encabezado 1</h1>
+        <h2>Encabezado 2</h2>
+        <h3>Encabezado 3</h3>
+        <h4>Encabezado 4</h4>
+        <h5>Encabezado 5</h5>
+        <h6>Encabezado 6</h6>
+
+        <p>Este es un párrafo de texto</p>
+        <hr>
+        <a href="https://www.facebook.com">enlace a facebook</a>
+
+        <h4>UL</h4>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+        </ul>
+
+        <h4>OL</h4>
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+        </ol>
+
+        <img src="https://via.placeholder.com/150" alt="ejemplo">
+        <div>
+            <p>Este es un divisor<p>
+            <span>Este es un texto dentro de una etiqueta de extensión de texto</span>
+        </div>
+    </div>
+
+    <section>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+    </section>
+
+    <h2>Grid Layout</h2>
+    <div id="grilla-nueva">
+        <div class="divs-nuevos">
+            1
+        </div>
+        <div class="divs-nuevos">
+            2
+        </div>
+        <div class="divs-nuevos">
+            3
+        </div>
+        <div class="divs-nuevos">
+            4
+        </div>
+        <div class="divs-nuevos">
+            5
+        </div>
+        <div class="divs-nuevos">
+            6
+        </div>
+    </div>
+</body>
+</html>

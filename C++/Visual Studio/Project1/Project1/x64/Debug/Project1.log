@@ -1,0 +1,7 @@
+﻿  FileName.cpp
+C:\Users\osfed\OneDrive\Programación\C++\Visual Studio\Project1\Project1\FileName.cpp(11,2): error C2065: 'cout': identificador no declarado
+C:\Users\osfed\OneDrive\Programación\C++\Visual Studio\Project1\Project1\FileName.cpp(11,24): error C2065: 'endl': identificador no declarado
+C:\Users\osfed\OneDrive\Programación\C++\Visual Studio\Project1\Project1\FileName.cpp(15,2): error C2065: 'cout': identificador no declarado
+C:\Users\osfed\OneDrive\Programación\C++\Visual Studio\Project1\Project1\FileName.cpp(15,24): error C2065: 'endl': identificador no declarado
+C:\Users\osfed\OneDrive\Programación\C++\Visual Studio\Project1\Project1\FileName.cpp(19,2): error C2065: 'cout': identificador no declarado
+C:\Users\osfed\OneDrive\Programación\C++\Visual Studio\Project1\Project1\FileName.cpp(19,24): error C2065: 'endl': identificador no declarado

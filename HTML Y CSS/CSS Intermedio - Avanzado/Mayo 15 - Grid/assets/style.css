@@ -1,0 +1,49 @@
+/*
+
+La responsividad en un sitio web se refiere a la capacidad que tiene de adaptarse y verse correctamente en diferentes dispositivos y tamanios de pantalla, como computadoras de escritorio, tabletas y telefonos moviles. Es esencial para proporcionar una experiencia de usuario optima en cualquier dispositivo.
+
+CSS nos ofrece una herramienta poderosa llamda Medya Querys (consultas de medios).
+
+Una media query es una regla de CSS que se aplica solo cuando se cumplen ciertas condiciones relacionadas con las caracteristicas de nuestro dispositivo (ancho de pantalla, orientacion o resolucion).
+
+@media (parametro o condicion a cumplir)
+    estilos que se aplican o se modifican cuando se cumplen esas condiciones
+
+@media = palabra reservada
+() = parametros o condiciones a cumplir
+{}= estilos a modificar
+
+*/
+
+body{
+    text-align: center;
+    color: red;
+}
+
+@media (max-width:500px){
+    body{
+        color: blue;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .parrafo{
+        display: none;
+    }
+}
+
+@media (max-width:1024px){
+    body{
+        color: blue;
+    }
+}
+
+@media (orientation:landscape){ /* cuando la anchura es mayor que la altura*/
+    body{
+        color: green;
+    }
+}
+
+@media (orientation: landscape) and (max-width:500px){
+    body{
+        color: yellow;
+    }
+}

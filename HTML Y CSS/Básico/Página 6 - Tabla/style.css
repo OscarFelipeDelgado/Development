@@ -1,0 +1,33 @@
+.tabla-1{
+    background-color: wheat;
+    padding: 5px;
+    margin: 5vw;
+}
+th{
+    border: 2px solid;
+    padding: 5px;
+}
+th{
+    background-color: lightsalmon;
+}
+th:first-child{
+    background-color: lightgoldenrodyellow;
+}
+td{
+    background-color: lightcyan;
+    padding: 1vw;
+    height: 5vh;
+    width: 20vw;
+}
+td:first-child{
+    background-color: lightsalmon;
+}
+td:nth-last-child(2){
+    background-color: lightgray;
+}
+td:last-child{
+    background-color: lightgray;
+}
+.wed{
+    width: 5vw;
+}

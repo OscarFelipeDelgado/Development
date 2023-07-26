@@ -1,0 +1,19 @@
+.gallery {
+    display: flex;
+    /*Esta propiedad nos ayuda alinear los elementos por debajo del otro*/
+    flex-wrap: wrap;
+}
+
+.image-container {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.image-container img {
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+}

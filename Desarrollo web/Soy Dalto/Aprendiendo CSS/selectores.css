@@ -1,0 +1,44 @@
+/*selector: universal*/
+* {
+  color: darkgray;
+}
+
+/*selector: de tipo*/
+h1 {
+  color: blueviolet;
+}
+
+/*selector: de tipo*/
+button {
+  color: green;
+}
+
+/*selector: por clases*/
+.titulo-v {
+  color: darkgoldenrod;
+}
+
+/*selector: por ID*/
+#element {
+  color: darkseagreen;
+}
+
+/*selector por atributo*/
+[rancio="si"] {
+  color: red;
+}
+
+/*selector de manera descendiente*/
+h2 p {
+  color: red;
+}
+
+.t6 b {
+  color: magenta;
+}
+
+/*selector pseudoclase*/
+
+p:hover {
+  color: red;
+} /*hover se usa para que tome la propiedad cuando se le pose el mouse encima*/

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+}
+header{
+    background-color: red;
+}
+nav{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    
+}
+ul{
+    text-decoration: none;
+}

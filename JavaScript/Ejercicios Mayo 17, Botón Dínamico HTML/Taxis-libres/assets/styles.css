@@ -1,0 +1,35 @@
+body{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "cards"
+        "carousel"
+
+    
+    ;
+    gap: 1vw;
+}
+header{
+    grid-area: header;
+}
+nav{
+    display: flex;
+    background-color: yellow;
+    align-items: center;
+    padding: 3vw;
+}
+.img-nav-taxis{
+    height: auto;
+    width: 10vw;
+}
+.div-cards{
+    grid-area: cards;
+    display: flex;
+    padding: 10vh 5vw;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#carousel-main{
+    grid-area: carousel;
+}

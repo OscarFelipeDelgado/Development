@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Generador de Contraseñas</h1>
+
+    <label for="mayusculas">Incluir mayúsculas:</label>
+    <input type="checkbox" name="mayusculas" id="mayusculas">
+
+    <label for="minusculas">Incluir minúsculas:</label>
+    <input type="checkbox" name="minusculas" id="minusculas">
+
+    <label for="numeros"> Incluir números:</label>
+    <input type="checkbox" name="numeros" id="numeros">
+
+    <label for="simbolos"> Incluir símbolos:</label>
+    <input type="checkbox" name="simbolos" id="simbolos">
+
+    <br><br>
+
+    <label for="longitud">Longitud de la contraseña:</label>
+    <input type="number" name="longitud" id="longitud">
+    <br><br>
+    <button type="submit" onclick="generarContrasena()">GENERAR</button>
+
+    <p></p>
+    <p id="resultado"></p>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

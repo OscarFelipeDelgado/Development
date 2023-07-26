@@ -1,0 +1,157 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #eee;
+    height: 100%;
+}
+
+/*  
+
+Intro a GRID
+
+    display: grid nos sirve para crear una cuadricula con el espacio total de la pantalla 
+    display: inline-grid nos sirve para crear una cuadricula pero con el espacio definido por el contenido.
+
+    Grid explicita: Es una cuadricula en la que nosotros definimos el tamaño de cada uno de los espacios.
+    Grid implicita: Es una cuadricula en la que el navegador nos asigna el tamaño de cada uno de los espacios.
+
+
+Columnas y filas
+
+    Para definir el tamano de las filas, usaremos la propiedad grid-template-rows. Para definir este tamano de las filas se especifica en pixeles, fracciones o porcentajes. Si no se hace, se asigna automaticamente.
+    Para definir el tamano de las columnas, usaremos la propiedad grid-template-columns.
+
+
+Tamaño minimo y maximo, y repeticion de dimensiones
+
+    Estas dos propiedades nos permiten definir el tamano de las columnas y filas de la cuadricula, ademas dichas propiedades tienen atributos para modificar este espacio, por ejemplo::after
+
+        - grid-template-rows: minmax(100px, auto) 1fr; que nos permite definir el tamano minimo y maximo de la fila.
+        - grid-template-columns: repeat(auto-fit, minmax(100px, auto)); que nos permite definir el tamano minimo y maximo de la columna.
+        - grid-template-repeat: repeat(3, 100px); *El valor repeat(n, m) nos sirve para repetir una fila o columna n veces, y m es el tamaño de la fila o columna. 
+        
+    Tambien podemos establecer nuestros valores en fracciones, esto es, utilizando 1fr, 2fr, etc. Con esto deciemos a CSS que dividiremos nuestras columnas en fracciones para que la distribucion sea mas equitativa. Se suman los totales de las fracciones y de ahi se distribuyen. Tambiien podemos usar rem, porcetanjes, etc.
+    
+
+Brechas entre elementos
+    
+    A veces, cuando construimos nuestro grid, vamos a querer que nuetras celdas esten separadas, para eso vamos a agregarles espacio entre ellas con la propiedad.
+
+        - grid-gap: 10px; que nos permite definir el espacio entre las celdas.
+        - grid-gap-row: 10px; que nos permite definir el espacio entre las filas.
+        - grid-gap-column: 10px; que nos permite definir el espacio entre las columnas.
+
+
+Expandir elementos del grid
+
+    Habra ocasiones en que querramos expandir un elemento para que ocupe toda una fila, o toda una columna (lo que llamamos combinar celdas en excel), para ello nos apoyamos de las propiedades:
+
+        - grid-column-start
+        - grid-column-end
+
+    Estas propiedades no pueden ser asignadas al grid, si no a un elemento, por lo que para expandir un elemento, debemos crear una nueva celda, y asignarle las propiedades grid-column-start y grid-column-end.
+
+    La notacion corta para este atributo es:
+
+        - grid-column: 1/3; donde nos permite indicar donde inicia y donde termina la columna usando / como separador.
+
+
+Distribucion de contenidos con grid-template-areas
+
+Podemos usar la propiedad grid-template-areas para definir la distribucion de los contenidos en nuestra cuadricula.
+
+
+Alineacion de contenido del grid
+
+    Para alinear todos los elementos de nuestra cuadricula, podemos usar las propiedades:
+
+        - justify-items: center;
+        - justify-items: end;
+        - justify-items: start;
+        - justify-items: stretch;
+        - justify-items: baseline;
+
+    Para alinear los contenidos de nuestra fila, podemos usar las propiedades:
+    
+            - align-items: center;
+            - align-items: end;
+            - align-items: start;
+            - align-items: stretch;
+            - align-items: baseline;
+
+    Para alinear un solo elemento, usando clases de CSS y las siguientes propiedades:
+    
+            - align-self: center;
+            - align-self: end;
+            - align-self: start;
+            - align-self: stretch;
+            - align-self: baseline;
+    
+    */
+
+.agrid{
+    display: grid;
+    grid-template-rows: repeat(2, 50px); 
+    grid-template-columns: repeat(3, 100px); 
+    grid-gap: 20px 10px;
+ }
+
+.bgrid {
+    display: grid;
+    grid-template-areas:"header header"
+                        "content sidebar"
+                        "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 100px; /*Para elementos implicitos de la grid*/
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.grid{
+    display: grid;
+    width: 100%; /*Para que el grid ocupe toda la pantalla*/
+    height: 100%;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    grid-gap: 5px;
+    justify-content: space-around;  /*Para que los elementos se alineen en el eje X*/
+    justify-content: space-between; /*Para que los elementos se alineen en el eje X, sin dejar espacio a los bordes*/
+    justify-content: space-evenly; /*Para que los elementos se alineen en el eje X, con espacio a los bordes*/
+    align-content: space-evenly; /*Para que los elementos se alineen en el eje Y, con espacio a los bordes*/
+}
+.aelement{
+    background-color: red;
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.red{
+    background-color: red;
+}
+
+.aitem-1{
+    justify-self: center; /*Para alinear un solo elemento horizontal*/
+    align-self: center; /*Para alinear un solo elemento vertical*/
+}
+/*
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.pink{
+    background-color: pink;
+}
+*/

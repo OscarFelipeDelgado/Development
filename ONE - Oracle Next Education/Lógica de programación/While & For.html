@@ -1,0 +1,58 @@
+ <meta charset="utf-8">
+ <font color="white">
+ <body bgcolor="black">
+
+ <h1>PROGRAMA - TABLA DE MULTIPLICAR</h1>
+ <br>
+
+ <script>
+
+     function saltarLinea() {
+     
+         document.write("<br>");
+         document.write("<br>");
+         document.write("<br>");
+     }
+
+     function imprimir(frase) {
+    
+         document.write(frase);
+         saltarLinea(); 
+
+     }
+
+
+    var multiplicador = 1
+
+    imprimir("WHILE")
+
+    while (multiplicador <= 10) {
+
+        imprimir(7 * multiplicador);
+        multiplicador++;
+
+    }
+
+
+
+    imprimir("FOR")
+
+    for (var multiplicador = 1;multiplicador <= 10;multiplicador++) {
+
+        imprimir(7 * multiplicador);
+
+    }
+
+    let Things = [8,1,2,3,4,5,34,5,45,435,3,4]; 
+
+   
+
+    for (var i = 0; i < Things.length; i++) {
+        imprimir(Things[i]);
+    }
+
+
+  </script>
+
+  </font>
+  </body>

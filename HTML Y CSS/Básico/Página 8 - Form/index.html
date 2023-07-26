@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Travel reservation form</h2>
+    <h6>*denotes mandatory</h6>
+
+    <form>
+        <div>
+            <label for="fullname">Full name*:</label><br>
+            <input type="text" name="fullname">
+        </div>
+        <div>
+            <label for="email1">Email*:</label><br>
+            <input type="email" name="email1">
+        </div>
+        <div>
+            <label for="Tour">Select Tour Package*:</label><br>
+            <select name="tour" id="tour">
+                <option value="1">Basic</option>
+                <option value="2">Full</option>
+                <option value="3">Deluxe</option>
+            </select>
+        </div>
+        <div>
+            <label for="arrival">Arrival Date*:</label><br>
+            <input type="date" name="arrival" id="arrival">
+        </div>
+        <div>
+            <label for="persons">Number of persons*:</label><br>
+            <input>
+        </div>
+        <div>
+            <label for="avail">What would you want to avail?*:</label><br>
+
+            <label for="boarding">Boarding</label>
+            <input type="checkbox" name="boarding" id="boarding"><br>
+            <label for="fooding">Fooding</label>
+            <input type="checkbox" name="fooding" id="fooding"><br>
+            <label for="slight">Slight Seeing</label>
+            <input type="checkbox" name="slight" id="slight"><br>
+        </div>
+        <div>
+            <label for="discount">Discount Coupon code</label><br>
+            <input>
+        </div>
+        <div>
+            <label for="terms">Terms and conditions*</label><br>
+            <input type="radio" name="termsyes" id="termsyes">I agree
+            <input type="radio" name="termsnot" id="termsnot">I disagree
+        </div>
+        <div>
+            <input type="submit" value="Complete reservation">
+        </div>
+    </form>
+</body>
+</html>
